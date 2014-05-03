@@ -10,8 +10,10 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Food Finders</title>
-    <script type="text/javascript" src="gmaps.js"></script>
     <script 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmy8EHjOVYPYYMMNH06dPQcPI2qGHpa8c&v=3.exp&sensor=true&libraries=places"></script>
+    <script type="text/javascript" src="gmaps.js"></script>
+        <link rel="stylesheet" href="foodfinder.css" />
+    
 
   </head>
 
@@ -19,23 +21,7 @@
  <body>
 	<h1>Food Finders</h1>
 
-	<div id="demo"></div>
+	<div id="map-canvas"></div>
 
-	<script>
-		var x = document.getElementById("demo");
-	
-		function getLocation() {
-			if (navigator.geolocation) {
-				navigator.geolocation.getCurrentPosition(showPosition);
-			}
-		}
-		function showPosition(position) {
-			
-			x.innerHTML = "Latitude: " + position.coords.latitude
-					+ "<br>Longitude: " + position.coords.longitude;
-		}
-		getLocation();
-	
-	</script>
 </body>
 </html>
