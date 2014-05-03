@@ -1,0 +1,3 @@
+# Module foodfinder
+# RPC service class, partial path of RPC policy file
+com.hackathon.foodfinder.client.GreetingService, 96B21D2C9586386B49138BB1F027E3AA.gwt.rpc

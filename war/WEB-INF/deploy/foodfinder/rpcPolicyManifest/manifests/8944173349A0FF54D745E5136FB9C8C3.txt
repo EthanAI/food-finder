@@ -1,0 +1,2 @@
+serviceClass: com.hackathon.foodfinder.client.GreetingService
+path: 96B21D2C9586386B49138BB1F027E3AA.gwt.rpc
