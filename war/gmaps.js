@@ -71,7 +71,7 @@ function showPosition(position) {
 	var request = {
 		location : pyrmont,
 		radius : 500,
-		types : [ 'store' ]
+		types : [ 'restaurant' ]
 	};
 	infowindow = new google.maps.InfoWindow();
 	var service = new google.maps.places.PlacesService(map);
