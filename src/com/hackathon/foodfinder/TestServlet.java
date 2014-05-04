@@ -2,8 +2,12 @@ package com.hackathon.foodfinder;
 
 import java.io.*;
 import java.sql.*;
+
 import javax.servlet.http.*;
+
 import com.google.appengine.api.utils.SystemProperty;
+import com.google.appengine.labs.repackaged.org.json.JSONArray;
+import com.google.appengine.labs.repackaged.org.json.JSONObject;
 
 @SuppressWarnings("serial")
 public class TestServlet extends HttpServlet {
@@ -108,18 +112,40 @@ public class TestServlet extends HttpServlet {
                     "FROM checkins");
             
             
-            while (rs.next()) {
-                s = rs.getString("userEmail");
+            
+
+            JSONArray jsArray = new JSONArray();
+            
+        	while (rs.next()) {
+                //s = rs.getString("userEmail");
                 //System.out.println(s);
+                JSONObject myJSON = new JSONObject();
+
+            	myJSON.put("userEmail", rs.getString("userEmail"));
+            	myJSON.put("restaurantName", rs.getString("restaurantName"));
+            	myJSON.put("latitude", rs.getString("latitude"));
+            	myJSON.put("longitude", rs.getString("longitude"));
+
+            	jsArray.put(myJSON);
             }
+        	
+        	//json.write(response.getWriter());
+        	
+        	resp.setContentType("text/plain");
+    		resp.getWriter().println(
+    				"(" + jsArray.toString() + ")"
+    				);
 	        
 	    } catch(Exception e) {
 	    	
 	    }
 		
 		
-		resp.setContentType("text/plain");
-		resp.getWriter().println("Hello, world " + url + " " + s);
+		//resp.setContentType("text/plain");
+		//resp.getWriter().
+		//println("Hello, world " + url + " " + s);
+	    
+	    
 	}
 	
 	
