@@ -23,7 +23,7 @@ function addCheckinMarkers() {
 														map : map,
 														position : point,
 														title : val.restaurantName,
-														icon : "http://labs.google.com/ridefinder/images/mm_20_blue.png"
+														icon : "http://maps.gstatic.com/intl/en_ALL/mapfiles/drag_cross_67_16.png"
 													});
 
 										});
