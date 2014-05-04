@@ -77,8 +77,26 @@ function showPosition(position) {
 	var service = new google.maps.places.PlacesService(map);
 	service.nearbySearch(request, callback);
 	
-	addCheckinMarkers();
+	
+	$
+	.each(
+			restaurantList,
+			function(key, val) {
+
+				var point = new google.maps.LatLng(
+						val.latitude, val.longitude);
+
+				var marker = new google.maps.Marker(
+						{
+							map : map,
+							position : point,
+							title : val.restaurantName,
+							icon : "http://maps.google.com/mapfiles/marker_purple.png"
+						});
+
+			});
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-getLocation();
+//getLocation();
+
