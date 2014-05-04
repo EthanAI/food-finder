@@ -17,11 +17,13 @@ create table checkins (rowNumber INT NOT NULL AUTO_INCREMENT, userEmail VARCHAR(
 
 INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("ethan@ethan.com", "Cafe Taj Mahal", "21.2892699", "-157.8114305"); 
 
-INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("ethan@ethan.com", "McDonald's", "21.309641", "-157.809559");
+INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("ethan@ethan.com", "Nishi Moncho Ramen", "21.309482", "-157.810528");
 
 INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("ethan@ethan.com", "Bankok Chef", "21.310534", "-157.808706");
 
-21.309641,-157.809559
+INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("friend@friend.com", "Manoa Sushi", "21.307785", "-157.810267");
+
+21.307785,-157.810267
 
 Table 2:
 
