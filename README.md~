@@ -21,9 +21,9 @@ INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("e
 
 INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("ethan@ethan.com", "Bankok Chef", "21.310534", "-157.808706");
 
-INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("friend@friend.com", "Bankok Chef", "21.310534", "-157.808706");
+INSERT INTO checkins (userEmail, restaurantName, latitude, longitude) values ("friend@friend.com", "Manoa Sushi", "21.307785", "-157.810267");
 
-21.309641,-157.809559
+21.307785,-157.810267
 
 Table 2:
 

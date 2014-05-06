@@ -1,6 +1,14 @@
 food-finder
 ===========
+Food Finder is a webapp that runs in the cloud using Google App Engine tools. 
+Food Finder helps you decide where to eat out by identifying nearby restaurants you have
+never eaten at before. Good for getting to know your city better. Social elements will 
+add the ability to see where your friends eat a lot to help you decide among your untried 
+restaurants. You can also upload a photo of your meal when you check in, and search through
+photos of other meals people have had at the restaurant to help you decide what looks good.
 
+
+========================technical stuff===================================================
 Cloud SQL: 
 https://developers.google.com/cloud-sql/
 mysql login: 
